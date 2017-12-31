@@ -123,10 +123,6 @@ module Suspenders
       copy_file "factories.rb", "spec/factories.rb"
     end
 
-    def set_up_hound
-      copy_file "hound.yml", ".hound.yml"
-    end
-
     def configure_smtp
       copy_file 'smtp.rb', 'config/smtp.rb'
 

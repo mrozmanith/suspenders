@@ -100,7 +100,6 @@ module Suspenders
       say 'Setting up the test environment'
       build :set_up_factory_bot_for_rspec
       build :generate_factories_file
-      build :set_up_hound
       build :generate_rspec
       build :configure_rspec
       build :configure_background_jobs_for_rspec
@@ -221,6 +220,7 @@ module Suspenders
       generate("suspenders:enforce_ssl")
       generate("suspenders:static")
       generate("suspenders:stylesheet_base")
+      generate("suspenders:lint")
     end
 
     def outro
