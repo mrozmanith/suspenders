@@ -69,7 +69,6 @@ module Suspenders
       build :replace_gemfile, options[:path]
       build :set_ruby_to_version_being_used
       bundle_command 'install'
-      build :configure_simple_form
     end
 
     def setup_database
@@ -221,6 +220,7 @@ module Suspenders
       generate("suspenders:enforce_ssl")
       generate("suspenders:static")
       generate("suspenders:stylesheet_base")
+      generate("suspenders:forms")
     end
 
     def outro
