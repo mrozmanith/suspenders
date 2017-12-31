@@ -3,7 +3,7 @@ require "rails/generators"
 module Suspenders
   class DbOptimizationsGenerator < Rails::Generators::Base
     def add_bullet
-      gem "bullet", group: [:development, :test]
+      gem "bullet", group: %i(development test)
     end
 
     def configure_bullet
